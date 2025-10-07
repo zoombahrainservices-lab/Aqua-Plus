@@ -38,7 +38,9 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: var(--gradient-1);
+  width: 100vw;
+  background: url('Images/hero.jpg') center/cover no-repeat;
+  background-size: 100% 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +155,7 @@ body {
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
-  color: #00c9ff;
+  color: #ff6b35;
   opacity: 0.95;
 }
 
@@ -196,6 +198,19 @@ body {
 .btn-secondary:hover {
   background: var(--white);
   color: var(--primary-color);
+}
+
+.btn-hero {
+  background: #62ae93;
+  color: #2c75aa;
+  box-shadow: 0 8px 25px rgba(98, 174, 147, 0.3);
+  border: 2px solid transparent;
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(98, 174, 147, 0.4);
+  background: #5a9d85;
 }
 
 .scroll-indicator {
@@ -309,7 +324,7 @@ section {
 .applications-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 20px;
   margin-top: 50px;
 }
 
@@ -513,6 +528,7 @@ section {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .secure-buttons .btn {
@@ -1165,8 +1181,8 @@ section {
   }
 
   .applications-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
   }
 
   .advantages-grid {
@@ -1209,7 +1225,9 @@ section {
   }
 
   .secure-buttons {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
   .secure-buttons .btn {
@@ -1263,30 +1281,30 @@ section {
   }
 
   .speaker-item {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     margin-bottom: 50px;
   }
 
   .speaker-left,
   .speaker-right {
-    grid-template-columns: 1fr;
-  }
-
-  .speaker-image {
-    order: -1;
+    grid-template-columns: 1fr 1fr;
   }
 
   .speaker-image img {
-    height: 300px;
+    height: 250px;
   }
 
   .speaker-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .speaker-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .speaker-description {
+    font-size: 0.9rem;
   }
 
   .system-content {
@@ -1492,8 +1510,8 @@ section {
   }
 
   .applications-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
   }
 
   .advantages-grid {
@@ -1503,17 +1521,22 @@ section {
 
   .application-item,
   .advantage-item {
-    padding: 30px 20px;
+    padding: 15px 10px;
   }
 
   .application-icon,
   .advantage-icon {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .application-item h3,
   .advantage-item h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .application-item p {
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
 
   .resistance-stability-grid {
@@ -1629,17 +1652,22 @@ section {
 
   .application-item,
   .advantage-item {
-    padding: 25px 15px;
+    padding: 10px 6px;
   }
 
   .application-icon,
   .advantage-icon {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .application-item h3,
   .advantage-item h3 {
-    font-size: 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .application-item p {
+    font-size: 0.7rem;
+    line-height: 1.2;
   }
 
   .resistance-card,
