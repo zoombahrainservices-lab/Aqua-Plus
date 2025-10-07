@@ -510,6 +510,7 @@ section {
 
 .secure-buttons {
   display: flex;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -1208,8 +1209,7 @@ section {
   }
 
   .secure-buttons {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   .secure-buttons .btn {
